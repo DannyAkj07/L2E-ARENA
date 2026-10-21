@@ -5,7 +5,8 @@ def clean_words(words):
     #     if item == "":
     #         continue
     #     new_words.append(item)
-    new_words = [item.lower() for item in words if item.strip()]
+    
+    new_words = [item.lower().strip() for item in words if item.strip()]
     return new_words
 
 print(clean_words([" ","Hello",""]))
