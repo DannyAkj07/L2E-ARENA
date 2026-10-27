@@ -22,5 +22,5 @@ def sum_nested_list(nested_list: list) -> int:
     return sum_list
 
 
-print(sum_nested_list([[1, 1], 2, [1, 1]]))
+print(sum_nested_list([[1,[2,3], 1], 2, [1, 1]]))
 print(sum_nested_list([1, [2, 3], [4, [5]]]))
