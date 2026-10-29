@@ -22,7 +22,7 @@ def is_valid_parenthesis(s: str) -> bool:
         elif char in pairs.keys():
             if not stack:
                 return False
-            elif pairs[char] == stack[-1]:
+            if pairs[char] == stack[-1]:
                 stack.pop()
             else:
                 return False
@@ -31,7 +31,7 @@ def is_valid_parenthesis(s: str) -> bool:
 
     # return len(stack) == 0
     # ====== OR ======
-    
+
     if len(stack) == 0:
         return True
     else:
