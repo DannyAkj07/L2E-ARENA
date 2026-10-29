@@ -39,3 +39,7 @@ def view_settings(settings):
 test_settings = {}
 print(view_settings(test_settings))
 print(add_setting(test_settings, ("THEME", "DARK")))
+print(add_setting(test_settings, ("notifications", "ENABLED")))
+print(update_setting(test_settings, ("theme", "LIGHT")))
+print(view_settings(test_settings))
+print(delete_setting(test_settings, "THEME"))
