@@ -7,7 +7,7 @@ def list_anayser(nums: list):
     total = 0
     index_small = 0
     index_large = 0
-    
+
     for index, num in enumerate(nums):
         if num < smallest:
             smallest = num
@@ -37,8 +37,11 @@ def list_anayser(nums: list):
     print(f"Total: {total}")
     print(f"Average: {average:.2f}")
     print(f"Numbers above average: {above_average}")
-    
 
 
-list_anayser([12, 5, 27, 8, 14, 27, 3])
-list_anayser([])
+nums = input("What are your numbers using space to seperate: ")
+nums = nums.split()
+nums = [int(nums) for nums in nums]
+# list_anayser([12, 5, 27, 8, 14, 27, 3])
+# list_anayser([])
+list_anayser(nums)
