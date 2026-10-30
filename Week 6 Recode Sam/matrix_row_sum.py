@@ -18,7 +18,9 @@ def mat_sum(matrix: list):
     #     print(f"Column {col_index + 1} total: {col_total}")
     for col in range(num_col):
         col_total = 0
-        for row in range(num_row):
+        for row in range(1,num_row,1):
+            # ======== OR =======
+        # for row in range(num_row):
             col_total += matrix[row][col]
         print(f"Column {col + 1} total: {col_total}")
 
