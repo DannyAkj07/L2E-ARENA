@@ -22,6 +22,6 @@ def binary_search(nums, target) -> tuple[int, int]:
     return (saved_index, comparison)
 
 
-print(binary_search([1, 3, 3, 3, 5, 8], 3))
+print(binary_search([1, 3, 3, 3, 5, 8,], 3))
 print(binary_search([1, 3, 5, 8], 4))
 print(binary_search([], 7))
