@@ -17,17 +17,17 @@ def max_subarray_brute(nums):
 
     return (max_sum, (best_start, best_end))
 
-def max_subarray_fast(nums):
-    if not nums:
-            return (0, (-1, -1))
-    max_sum = nums[0]    
-    best_start = 0
-    best_end = 0
+# def max_subarray_fast(nums):
+#     if not nums:
+#             return (0, (-1, -1))
+#     max_sum = nums[0]    
+#     best_start = 0
+#     best_end = 0
 
-    for start in 
+#     for start in 
 
-
-print(max_subarray_brute([-2, 1, -3, 4, -1, 2, 1, -5, 4]))
-print(max_subarray_brute([5]))
-print(max_subarray_brute([-3, -1, -2]))
-print(max_subarray_brute([]))
+print(max_subarray_brute([2, -1, 3]))
+# print(max_subarray_brute([-2, 1, -3, 4, -1, 2, 1, -5, 4]))
+# print(max_subarray_brute([5]))
+# print(max_subarray_brute([-3, -1, -2]))
+# print(max_subarray_brute([]))
