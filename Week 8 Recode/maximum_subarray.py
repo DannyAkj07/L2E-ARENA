@@ -27,21 +27,21 @@ def max_subarray_fast(nums):
     current_start = 0
 
     for i in range(len(nums)):
-        if current_start < 0:
+        if current_sum < 0:
             current_start = i
-            current_start = 0
+            current_sum = 0
         current_sum += nums[i]
         if current_sum > max_sum:
             max_sum = current_sum
             best_start = current_start
             best_end = i
 
-    return(max_sum, (best_start,best_end)) 
+    return (max_sum, (best_start,best_end)) 
 
 
 print(max_subarray_fast([2, -1, 3]))
 # print(max_subarray_brute([2, -1, 3]))
-# print(max_subarray_brute([-2, 1, -3, 4, -1, 2, 1, -5, 4]))
+print(max_subarray_fast([-2, 1, -3, 4, -1, 2, 1, -5, 4]))
 # print(max_subarray_brute([5]))
 # print(max_subarray_brute([-3, -1, -2]))
 # print(max_subarray_brute([]))

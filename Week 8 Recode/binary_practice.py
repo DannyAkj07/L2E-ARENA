@@ -15,4 +15,4 @@ def binary_search(nums, target):
     return (-1)
 
 
-print(binary_search([1, 3, 3, 3, 5, 8,], 8))
+print(binary_search([1, 3, 3, 3, 5, 8,], 1))
