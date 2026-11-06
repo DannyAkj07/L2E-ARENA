@@ -7,4 +7,4 @@ def is_prime(n: int) -> bool:
     return True
 
 
-print(is_prime(9))
+print(is_prime(7))
