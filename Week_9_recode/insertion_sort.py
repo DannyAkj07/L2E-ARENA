@@ -14,6 +14,7 @@ def insertion_sort(nums):
                 j -= 1
             else:
                 break
+            
         nums[j + 1] = key
 
     return (comparison, shift)
