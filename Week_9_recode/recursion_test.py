@@ -61,6 +61,7 @@
 
 # Base case: exp == 0 (when exp is 0 what should happen)
 # How it gets smaller: (exp - 1) reduces exp until it gets to zero
+# How the even works: for even numbers it just divides by 2 and multiply by themseves
 def power(base: int, exp: int) -> int:
     if exp < 0:
         return None
