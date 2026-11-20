@@ -1,7 +1,7 @@
 def is_match(text, pattern):
-    if not pattern and not text:
+    if pattern == "" and text == "":
         return True
-    if not pattern and text:
+    if pattern == "" and text != "":
         return False
     if text == "":
         if pattern[0] == "*":
