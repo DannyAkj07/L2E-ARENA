@@ -5,6 +5,11 @@ QUESTIONS = [
         "answer": "def"
     },
     {
-        
+
     }
 ]
+def check_answer(question, choice):
+    pass
+
+def get_feedback(score, total):
+    pass
